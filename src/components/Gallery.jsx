@@ -3,7 +3,7 @@ import { Component } from "react";
 import { getFetch } from "./Fetch/Fetch";
 import Searchbar from "./Searchbar/Searchbar";
 import { ImageGallery } from "./Gallery/ImageGallery/ImageGallery";
-/*import Loader from "./Gallery/Loader/Loader";*/
+import { Loader } from "./Gallery/Loader/Loader";
 import { Modal } from "./Gallery/Modal/Modal";
 import { LoadMore } from "./Gallery/Button/Button";
 
@@ -110,7 +110,7 @@ toggleModal = (url) => {
          <Searchbar onSubmit={handleSubmit} />
         {showError && errorMessage}
         {isHits && <ImageGallery hits={hits} onClick={toggleModal}/>}
- 
+        {loading && <Loader />}
         {buttonVisible && <LoadMore onClick={handleLoadMore} />}
         {currentlargeImageURL && (
           <Modal url={currentlargeImageURL} closeModal={toggleModal}/>

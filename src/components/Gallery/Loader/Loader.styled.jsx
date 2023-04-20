@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const Spinner = styled.div`
+  width: 80px;
+  margin: 30px auto;
+  color: #3f51b5;
+`;
+
+/*
 export const LoaderBackdrop = styled.div`
   position: fixed;
   top: 0;
@@ -22,4 +29,5 @@ export const PendingLion = styled.img`
   height: auto;
   object-fit: contain;
   object-position: center;
-`;
+`;*/
+

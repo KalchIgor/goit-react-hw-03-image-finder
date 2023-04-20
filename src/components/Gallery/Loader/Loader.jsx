@@ -1,9 +1,13 @@
 import { Vortex } from 'react-loader-spinner';
-import { LoaderBackdrop, PendingLion } from './Loader.styled';
-import lion from 'Assets/lion-cartoon.png';
+import { Spinner } from './Loader.styled';
 
-/*
-<Vortex
+/*import { LoaderBackdrop, PendingLion } from './Loader.styled';
+import lion from 'Assets/lion-cartoon.png';*/
+
+export const Loader = () => {
+  return (
+    <Spinner>
+         <Vortex
   visible={true}
   height="80"
   width="80"
@@ -11,9 +15,13 @@ import lion from 'Assets/lion-cartoon.png';
   wrapperStyle={{}}
   wrapperClass="vortex-wrapper"
   colors={['red', 'green', 'blue', 'yellow', 'orange', 'purple']}
-/>
-*/
+  />
+    </Spinner>
+  );
+};
 
+
+/*
 export const Loader = () => {
   return (
     <LoaderBackdrop>
@@ -29,4 +37,4 @@ export const Loader = () => {
       <PendingLion src={lion} alt="lion" />
     </LoaderBackdrop>
   );
-};
+}; */
