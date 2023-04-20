@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 
 const ImageGalleryItem = ({hit, onClick}) => 
 {
-    const {webformatURL,image_type, largeImageURL } = hit;
+    const {webformatURL, largeImageURL } = hit;
     return (
         <li className={css.item}>
-            <img className={css.image} src={webformatURL} alt={image_type} onClick={() => onClick(largeImageURL)}/>
+            <img className={css.image} src={webformatURL} alt="pfoto" onClick={() => onClick(largeImageURL)}/>
         </li>
     )
 };
