@@ -20,13 +20,10 @@ export default class Searchbar extends Component {
         if (query.trim() !== '') {
             this.props.onSubmit(query.trim());
         }
-        // this.reset();
+     
     }
 
-    // reset = () => {
-    //     this.setState({ query: ''})
-    // }
-
+   
     render () {
         const { query } = this.state;
         const { handleSubmit, handleChange } = this;
