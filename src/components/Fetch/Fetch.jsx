@@ -6,7 +6,7 @@ export const getFetch = (query,  page = 1) => {
     `${BASE_URL}?q=${query}&page=${page}&key=${API_KEY}&image_type=photo&orientation=horizontal&per_page=12`
   ).then(response => {
     if (!response.ok) {
-      return Promise.reject(new Error(`On request ${searchQuery} no images`));
+      return Promise.reject(new Error(`On request ${query} no images`));
     }
     return response.json();
   });
