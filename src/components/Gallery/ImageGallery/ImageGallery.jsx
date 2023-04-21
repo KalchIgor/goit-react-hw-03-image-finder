@@ -10,7 +10,13 @@ export const ImageGallery = ({hits, onClick}) => {
    </ul>)
  };
 
- ImageGallery.propTypes = {
+ImageGallery.propTypes = {
+  hits: PropTypes.oneOfType(
+    [ PropTypes.string,
+    PropTypes.number,
+    ]),
     id: PropTypes.number,
     onClick: PropTypes.func.isRequired,
 };
+
+  
