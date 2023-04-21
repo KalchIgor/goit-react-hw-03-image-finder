@@ -11,12 +11,10 @@ export const ImageGallery = ({hits, onClick}) => {
  };
 
 ImageGallery.propTypes = {
-  hits: PropTypes.oneOfType(
-    [ PropTypes.string,
-    PropTypes.number,
-    ]),
-    id: PropTypes.number,
-    onClick: PropTypes.func.isRequired,
+  hits: PropTypes.array,
+  id: PropTypes.number,
+  onClick: PropTypes.func.isRequired,
+
 };
 
   
